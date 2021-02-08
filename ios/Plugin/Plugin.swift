@@ -14,4 +14,19 @@ public class CardScanner: CAPPlugin {
             "value": value
         ])
     }
+    
+    @objc func scanCard(_ call: CAPPluginCall){
+        let scanCardHolderName = call.getBool("scanCardHolderName") ?? false
+        let scanCardIssuer = call.getBool("scanCardIssuer") ?? false
+        
+        let scanProcessor: ScanProcessor = ScanProcessor(withOptions: CardScanOptions(from: [scanCardHolderName,scanCardIssuer]))
+        
+        call.success([
+            "cardNumber": cardNumber,
+            "expiryMonth": expiryMonth,
+            "expiryYear": expiryYear,
+            "cardIssuer": cardIssuer,
+            "cardHolderName": cardHolderName
+        ])
+    }
 }

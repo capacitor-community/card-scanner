@@ -2,8 +2,9 @@
 <h3 align="center">Card Scanner</h3>
 <p align="center"><strong><code>@capacitor-community/card-scanner</code></strong></p>
 <p align="center">
-  Capacitor plugin for UXCam and FullStory analytics. It uses UXCam for Android and iOS platforms and FullStory for Web/PWA.
+  Capacitor plugin for card scanner feature using the Google's <a href="https://developers.google.com/ml-kit">Maching Learning Toolkit</a> for <a href="https://developers.google.com/android/reference/com/google/mlkit/vision/text/TextRecognition">Text Recoginition</a>.  It is bassed on the <a href="https://github.com/nateshmbhat/card-scanner-flutter">Natesh Bhat</a>'s plugin.
 </p>
+
 
 
 <p align="center">
