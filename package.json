@@ -1,5 +1,5 @@
 {
-  "name": "card-scanner",
+  "name": "@capacitor-community/card-scanner",
   "version": "0.0.1",
   "description": "Simple card scanner for Capacitor applications.",
   "main": "dist/plugin.js",
@@ -42,7 +42,9 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "card",
+    "scanner"
   ],
   "capacitor": {
     "ios": {
